@@ -1,0 +1,39 @@
+.search {
+  margin-top: 15px;
+  max-width: 300px;
+  display: block;
+  border: 1px solid $color-gray-1;
+  border-radius: 6px;
+
+  .input-group::before {
+    font-family: 'Ionicons';
+    content: '\f4a5';
+    font-size: 22px;
+    font-weight: 800;
+    color: $color-gray-2;
+    position: relative;
+    margin: 2px 0 0 10px;
+    -webkit-transition: .2s color;
+    transition: .2s color;
+  }
+
+  .input-group-addon i {
+    font-size: 24px;
+    opacity: .5;
+  }
+
+  .form-control {
+    color: $color-gray-1;
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-size: 15px;
+      color: $color-gray-2;
+    }
+
+  }
+}
+
