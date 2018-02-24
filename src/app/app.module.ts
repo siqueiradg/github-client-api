@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
 import { AppStarredComponent } from './app-starred/app-starred.component';
 import { AppReposComponent } from './app-repos/app-repos.component';
@@ -19,6 +21,7 @@ import { AppRoutes } from './app.routing';
   ],
   imports: [
     BrowserModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot(AppRoutes)
   ],
   providers: [AppService],
