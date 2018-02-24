@@ -1,0 +1,23 @@
+.navbar{
+  padding: 12px 0 5px;
+  color: rgba(255,255,255,0.75);
+
+  a.logo {
+    display: table;
+    text-decoration: none;
+    color: $color-white;
+  }
+  .logo span {
+    padding: 0 12px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+  .logo svg{
+    color: $color-white;
+    fill: currentColor;
+  }
+}
+.bg-dark {
+  background-color: #242a2f !important;
+}

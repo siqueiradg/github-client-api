@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+html, html a, body {
+   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 14px;
+  background-color: $background-color;
+  color: $default-text-color;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  overflow-x: hidden;
+}
+
+a {
+	color: $default-link-color;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: darken($default-link-color, 10%);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $default-text-color;
+	font-family: $font-primary;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+	line-height: 1.5;
+
+	a {
+		font-family: $font-primary;
+	}
+
+	small {
+		font-weight: 300;
+		color: lighten($default-text-color,5%);
+	}
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+p {
+	font-family: $font-primary;
+	color: $default-text-color;
+	line-height: 1.8;
+}
+
