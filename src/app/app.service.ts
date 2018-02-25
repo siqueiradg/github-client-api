@@ -9,7 +9,7 @@ import { Repository } from './shared/interface/repository';
 @Injectable()
 export class AppService {
 
-  private apiUrl = 'http://api.github.com/users/rodgerpaulo';
+  private apiUrl = 'https://api.github.com/users/rodgerpaulo';
 
   constructor(private http: HttpClient) {}
 
