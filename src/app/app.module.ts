@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppStarredComponent } from './app-starred/app-starred.component';
@@ -9,7 +10,6 @@ import { AppReposComponent } from './app-repos/app-repos.component';
 import { AppHomeComponent } from './app-home/app-home.component';
 
 import { AppService } from './app.service';
-import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 
 @NgModule({
