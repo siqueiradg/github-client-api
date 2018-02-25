@@ -1,4 +1,6 @@
+import { Repository } from './../shared/interface/repository';
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-repos',
@@ -6,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppReposComponent implements OnInit {
-  constructor() { }
 
-  ngOnInit() { }
+  listRepository: Repository[];
+  filterSearch: String;
+
+  constructor(private service: AppService) { }
+
+  ngOnInit() {
+    this.service.getRepos().subscribe(
+      (data: Repository[]) => {
+        this.listRepository = data;
+      }
+    );
+  }
 }
